@@ -1,0 +1,46 @@
+﻿@page "/order/{orderId}"
+<MudTabs Elevation="4" Rounded="true" Centered="true" Color="@Color.Primary">
+    <MudTabPanel Text="판매자 확인" Icon="mdi mdi-check" Class="@GetTabPanelClass(IsSellerConfirmed)" Disabled="@IsTabDisabled(IsSellerConfirmed)">
+        <MudText>판매자 확인 내용</MudText>
+    </MudTabPanel>
+    <MudTabPanel Text="창고 관리자 할당" Icon="mdi mdi-account" Class="@GetTabPanelClass(IsManagerAssigned)" Disabled="@IsTabDisabled(IsManagerAssigned)">
+        <MudText>창고 관리자 할당 내용</MudText>
+    </MudTabPanel>
+    <MudTabPanel Text="창고 사원 피킹" Icon="mdi mdi-truck" Class="@GetTabPanelClass(IsPickerPicking)" Disabled="@IsTabDisabled(IsPickerPicking)">
+        <MudText>창고 사원 피킹 내용</MudText>
+    </MudTabPanel>
+    <MudTabPanel Text="포장" Icon="mdi mdi-package-variant" Class="@GetTabPanelClass(IsPacking)" Disabled="@IsTabDisabled(IsPacking)">
+        <MudText>포장 내용</MudText>
+    </MudTabPanel>
+    <MudTabPanel Text="배송" Icon="mdi mdi-truck-delivery" Class="@GetTabPanelClass(IsShipping)" Disabled="@IsTabDisabled(IsShipping)">
+        <MudText>배송 내용</MudText>
+    </MudTabPanel>
+    <MudTabPanel Text="출고" Icon="mdi mdi-home-export-outline" Class="@GetTabPanelClass(IsReleased)" Disabled="@IsTabDisabled(IsReleased)">
+        <MudText>출고 내용</MudText>
+    </MudTabPanel>
+</MudTabs>
+
+@code {
+    [Parameter]
+    public int OrderId { get; set; }
+
+    // Order Status Flags
+    private bool IsSellerConfirmed = true;
+    private bool IsManagerAssigned = true;
+    private bool IsPickerPicking = true;
+    private bool IsPacking = true;
+    private bool IsShipping = true;
+    private bool IsReleased = true;
+
+    private string GetTabPanelClass(bool isActive)
+    {
+        return isActive ? "mud-tabpanel-active" : "";
+    }
+
+    private bool IsTabDisabled(bool isActive)
+    {
+        // You can define your own logic for disabling the tab based on its state.
+        // For example, if a previous step is not completed, you can disable the next step.
+        return !isActive;
+    }
+}

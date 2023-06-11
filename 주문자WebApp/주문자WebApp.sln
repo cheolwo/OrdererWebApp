@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "주문자WebApp", "주문자WebApp\주문자WebApp.csproj", "{D8E78726-9BC1-4E16-BFE9-7CE537DD5E0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "주문자WebApp", "주문자WebApp\주문자WebApp.csproj", "{D8E78726-9BC1-4E16-BFE9-7CE537DD5E0A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "주문Common", "..\FullFillmentService\FullFillMentSoulution\OrderCommon\주문Common.csproj", "{5F51883B-91D6-4657-97B3-AFBE76CBFDFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "주문Common", "..\..\FullFillmentService\FullFillMentSoulution\OrderCommon\주문Common.csproj", "{DBC62E52-2666-4877-AA12-B75D974CAE73}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerSample", "..\FullFillmentService\FullFillMentSoulution\IdentityServerSample\IdentityServerSample.csproj", "{0A561B50-F398-44F6-9618-E441F983D70F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerSample", "..\..\FullFillmentService\FullFillMentSoulution\IdentityServerSample\IdentityServerSample.csproj", "{B4C700BB-5DD7-4B1D-9691-657E9496D428}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "주문Server", "..\..\FullFillmentService\FullFillMentSoulution\OrderServer\주문Server.csproj", "{D54D2F0C-EBAD-48F2-9DEB-D4CD457A3DF2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "창고Server", "..\..\FullFillmentService\FullFillMentSoulution\WarehouseServer\창고Server.csproj", "{D7DEB57F-7681-48F7-884A-AD5453BAFCA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +23,22 @@ Global
 		{D8E78726-9BC1-4E16-BFE9-7CE537DD5E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8E78726-9BC1-4E16-BFE9-7CE537DD5E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8E78726-9BC1-4E16-BFE9-7CE537DD5E0A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5F51883B-91D6-4657-97B3-AFBE76CBFDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F51883B-91D6-4657-97B3-AFBE76CBFDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F51883B-91D6-4657-97B3-AFBE76CBFDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F51883B-91D6-4657-97B3-AFBE76CBFDFD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0A561B50-F398-44F6-9618-E441F983D70F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A561B50-F398-44F6-9618-E441F983D70F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A561B50-F398-44F6-9618-E441F983D70F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A561B50-F398-44F6-9618-E441F983D70F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC62E52-2666-4877-AA12-B75D974CAE73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC62E52-2666-4877-AA12-B75D974CAE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC62E52-2666-4877-AA12-B75D974CAE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC62E52-2666-4877-AA12-B75D974CAE73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C700BB-5DD7-4B1D-9691-657E9496D428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C700BB-5DD7-4B1D-9691-657E9496D428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C700BB-5DD7-4B1D-9691-657E9496D428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C700BB-5DD7-4B1D-9691-657E9496D428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54D2F0C-EBAD-48F2-9DEB-D4CD457A3DF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54D2F0C-EBAD-48F2-9DEB-D4CD457A3DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54D2F0C-EBAD-48F2-9DEB-D4CD457A3DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54D2F0C-EBAD-48F2-9DEB-D4CD457A3DF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7DEB57F-7681-48F7-884A-AD5453BAFCA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7DEB57F-7681-48F7-884A-AD5453BAFCA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7DEB57F-7681-48F7-884A-AD5453BAFCA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7DEB57F-7681-48F7-884A-AD5453BAFCA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,70 @@
+﻿@page "/"
+
+<MudContainer>
+    <MudGrid Justify="Justify.Center">
+        @foreach (var product in productList.OrderByDescending(p => p.FavoriteCount))
+        {
+            <MudItem xs="12" sm="6" md="4" lg="3">
+                <MudCard>
+                    <MudCardHeader>
+                        <CardHeaderAvatar>
+                            <MudAvatar Color="Color.Secondary">@product.Name.Substring(0, 1)</MudAvatar>
+                        </CardHeaderAvatar>
+                        <CardHeaderContent>
+                            <MudText Typo="Typo.body1">@product.Name</MudText>
+                            <MudText Typo="Typo.body2">가격: @product.Price</MudText>
+                        </CardHeaderContent>
+                        <CardHeaderActions>
+                            <MudIconButton Icon="@Icons.Material.Filled.Settings" Color="Color.Default" />
+                        </CardHeaderActions>
+                    </MudCardHeader>
+                    <MudCardMedia Image="icon-192.png" Height="250" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.body2">@product.Description</MudText>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Default" OnClick="@(() => IncrementFavoriteCount(product))" />
+                        <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" />
+                    </MudCardActions>
+                    <MudText Typo="Typo.body2">좋아요 수: @product.FavoriteCount</MudText>
+                </MudCard>
+            </MudItem>
+        }
+    </MudGrid>
+</MudContainer>
+
+@code {
+    private List<Product> productList;
+
+    protected override void OnInitialized()
+    {
+        // 상품 리스트를 가져오는 로직
+        productList = GetProductList().OrderByDescending(p => p.FavoriteCount).ToList();
+    }
+
+    private List<Product> GetProductList()
+    {
+        // 실제로는 데이터베이스 또는 API에서 상품 리스트를 조회하는 로직을 구현해야 합니다.
+        // 예시로 하드코딩된 상품 리스트를 반환합니다.
+        return new List<Product>
+        {
+            new Product { Name = "상품 1", Price = 10000, Description = "상품 1에 대한 설명", FavoriteCount = 5 },
+            new Product { Name = "상품 2", Price = 20000, Description = "상품 2에 대한 설명", FavoriteCount = 3 },
+            new Product { Name = "상품 3", Price = 30000, Description = "상품 3에 대한 설명", FavoriteCount = 7 },
+            new Product { Name = "상품 4", Price = 15000, Description = "상품 4에 대한 설명", FavoriteCount = 2 },
+        };
+    }
+
+    private void IncrementFavoriteCount(Product product)
+    {
+        product.FavoriteCount++;
+    }
+
+    public class Product
+    {
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public string Description { get; set; }
+        public int FavoriteCount { get; set; }
+    }
+}

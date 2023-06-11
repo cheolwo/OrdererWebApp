@@ -20,16 +20,36 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/OrdererWebApp/주문자WebApp/주문자WebApp/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/user/Desktop/OrdererWebApp/주문자WebApp/주문자WebApp/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/user/Desktop/OrdererWebApp/주문자WebApp/주문자WebApp/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/OrdererWebApp/주문자WebApp/주문자WebApp/Pages/Test.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/OrdererWebApp/주문자WebApp/주문자WebApp/Pages/대시보드.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNc64yA7Iuc67O065OcLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/OrdererWebApp/주문자WebApp/주문자WebApp/Pages/로그인.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNc66Gc6re47J24LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/OrdererWebApp/주문자WebApp/주문자WebApp/Pages/셀러상품들.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNc7IWA65+s7IOB7ZKI65OkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/OrdererWebApp/주문자WebApp/주문자WebApp/Pages/주문.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNc7KO866y4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/OrdererWebApp/주문자WebApp/주문자WebApp/Pages/주문상세.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNc7KO866y47IOB7IS4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/OrdererWebApp/주문자WebApp/주문자WebApp/Pages/회원가입.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNc7ZqM7JuQ6rCA7J6FLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/Desktop/OrdererWebApp/주문자WebApp/주문자WebApp/Shared/SurveyPrompt.razor]
