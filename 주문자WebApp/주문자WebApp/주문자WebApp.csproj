@@ -13,4 +13,9 @@
     <PackageReference Include="MudBlazor" Version="6.4.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\FullFillmentService\FullFillMentSoulution\OrderCommon\주문Common.csproj" />
+    <ProjectReference Include="..\..\..\FullFillmentService\FullFillMentSoulution\주문FrontCommon\주문FrontCommon.csproj" />
+  </ItemGroup>
+
 </Project>
